@@ -1,0 +1,13 @@
+.entity-node {
+    width: 100%;
+    /*margin: -10px;*/
+}
+
+.entity-node-header {
+    background-color: red;
+    border: 1px solid black;
+}
+
+.react-flow__node {
+    padding: 0; !important;
+}
