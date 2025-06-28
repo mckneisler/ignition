@@ -60,7 +60,7 @@ const initialNodes = [
     {
         id: '2',
         type: 'entity',
-        position: { x: 300, y: 0 },
+        position: { x: 0, y: 400 },
         data: {
             name: 'Album',
             columns: [
@@ -105,7 +105,7 @@ const initialNodes = [
     {
         id: '3',
         type: 'entity',
-        position: { x: 600, y: 0 },
+        position: { x: 300, y: 200 },
         data: {
             name: 'Song',
             columns: [
@@ -159,9 +159,17 @@ const initialEdges = [
         type: 'smoothstep',
         source: '1',
         target: '2',
+        style: {
+            strokeWidth: 2,
+            stroke: '#000000',
+        },
         markerStart: "1",
-        markerEnd: {type: MarkerType.Arrow},
-        label: 'test',
+        markerEnd: {type: MarkerType.ArrowClosed, style: {
+                strokeWidth: 2,
+                stroke: '#000000',
+            },
+        },
+        label: '...',
     },
     {
         id: 'e1-3',
@@ -170,7 +178,7 @@ const initialEdges = [
         target: '3',
         markerStart: "1",
         markerEnd: "N",
-        label: 'test',
+        label: '...',
     },
     {
         id: 'e2-3',
@@ -179,7 +187,7 @@ const initialEdges = [
         target: '3',
         markerStart: "1",
         markerEnd: "N",
-        label: 'test',
+        label: '...',
     },
 ];
 
